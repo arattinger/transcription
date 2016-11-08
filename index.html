@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transcription Editor</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <style>
+      body {
+      }
+
+      #container span {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px;
+      }
+
+      /* > 90% */
+      .confidence90 {
+        background-color: #4CAF50 !important;
+      }
+
+      .confidence80 {
+        background-color: #39883d !important;
+      }
+
+      .confidence70 {
+        background-color: #2b6a2e !important;
+      }
+
+      .confidence60 {
+        background-color: #255928 !important;
+      }
+
+      .confidence50 {
+        background-color: #0f2610 !important;
+      }
+
+      .marked {
+        border: 2px solid #38a349 !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+      }
+
+      .current-sentence {
+      	background-color: #e6e6e6;
+      }
+
+      .sentence {
+
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @media (min-resolution: 2dppx) {
+        * {
+          text-rendering: geometricPrecision;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <script src="output/myCode.js"></script>
+  </body>
+</html>
